@@ -1,0 +1,8 @@
+# my name configuration
+[user]
+email = ***
+name = ***
+
+# pull-dry-run alias
+[alias]
+pull-dry-run  = !"git fetch origin; B=$(git rev-parse --abbrev-ref HEAD); git diff --stat --summary ${B}..origin/${B}"
